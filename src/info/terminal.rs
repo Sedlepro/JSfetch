@@ -65,5 +65,3 @@ pub fn terminal() -> String {
 
     "Unknown Terminal".to_string()
 }
-
-

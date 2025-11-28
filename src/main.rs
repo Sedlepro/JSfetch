@@ -10,4 +10,6 @@ fn main() {
     let cpu = info::cpu::get_cpu();
     println!("CPU: {}", cpu);
     
+    let term = info::terminal::terminal();
+    println!("Terminal: {}", term);
 }
