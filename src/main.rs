@@ -21,6 +21,9 @@ fn main() {
 
     let os = info::system::get_os();
     println!("Linux Distro: {}", os);
+    let shell = info::shell::get_shell();
+    println!("Shell : {}", shell);
+
 
     let (percent, status) = info::battery::battery();
     println!("Battery: {}% ({})", percent, status);
