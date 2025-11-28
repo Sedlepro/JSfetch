@@ -20,7 +20,7 @@ pub fn get_mem() -> Memory {
             }
         }
         let used_kb = total_kb.saturating_sub(available_kb);
-
+        
         return Memory {
             used_gb: kb_to_gb(used_kb),
             total_gb: kb_to_gb(total_kb),
@@ -40,5 +40,6 @@ fn extract_kb(line: &str) -> u64 {
 }
 
 fn kb_to_gb(kb: u64) -> f64 {
-    kb as f64 / 1024.0 / 1024.0
+    let gb = kb as f64 / 1024.0 / 1024.0;
+    (gb * 100.0).round() / 100.0
 }
