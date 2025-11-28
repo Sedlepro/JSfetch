@@ -10,6 +10,9 @@ fn main() {
     let cpu = info::cpu::get_cpu();
     println!("CPU: {}", cpu);
 
+    let gpu = info::gpu::get_gpu();
+    println!("GPU : {}", gpu);
+
     let mem = info::memory::get_mem();
     println!("Used RAM: {} GB | Total RAM: {} GB", mem.used_gb, mem.total_gb);
     
