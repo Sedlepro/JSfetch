@@ -7,3 +7,5 @@ pub mod system;
 pub mod terminal;
 pub mod user;
 pub mod uptime;
+pub mod battery;
+

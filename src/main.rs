@@ -15,4 +15,7 @@ fn main() {
     
     let terminal = info::terminal::terminal();
     println!("Terminal: {}", terminal);
+
+    let (percent, status) = info::battery::battery();
+    println!("Battery: {}% ({})", percent, status);
 }
