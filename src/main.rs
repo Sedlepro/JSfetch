@@ -19,6 +19,10 @@ fn main() {
     let terminal = info::terminal::terminal();
     println!("Terminal: {}", terminal);
 
+    let shell = info::shell::get_shell();
+    println!("Shell : {}", shell);
+
+
     let (percent, status) = info::battery::battery();
     println!("Battery: {}% ({})", percent, status);
 }
