@@ -1,6 +1,9 @@
 mod info;
+mod ascii;
 
 fn main() {
+    println!("{}", ascii::get_ascii());
+
     let username = info::user::get_username();
     println!("User: {}", username);
 
