@@ -24,7 +24,7 @@ JSfetch automatically detects:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<YOUR-NAME>/JSfetch
+git clone https://github.com/Sedlepro/JSfetch
 cd JSfetch
 ```
 
@@ -35,17 +35,17 @@ cargo build --release
 
 The binary will be located at:
 ```
-target/release/jsfetch
+target/release/JSfetch
 ```
 
 ### 3. (Optional) Install globally
 ```bash
-sudo cp target/release/jsfetch /usr/local/bin/
+sudo cp target/release/JSfetch /usr/local/bin/
 ```
 
 Run with:
 ```bash
-jsfetch
+JSfetch
 ```
 
 ---
@@ -59,7 +59,7 @@ nano ~/.bashrc
 ```
 Add at the end:
 ```bash
-jsfetch
+JSfetch
 ```
 Reload:
 ```bash
@@ -72,7 +72,7 @@ nano ~/.zshrc
 ```
 Add:
 ```bash
-jsfetch
+JSfetch
 ```
 Reload:
 ```bash
@@ -85,13 +85,13 @@ nano ~/.config/fish/config.fish
 ```
 Add:
 ```fish
-jsfetch
+JSfetch
 ```
 
 ### Recommended: Only run in interactive terminals
 ```bash
 if [ -t 1 ]; then
-    jsfetch
+    JSfetch
 fi
 ```
 
